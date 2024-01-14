@@ -21,23 +21,24 @@ body {
 /* General Styling */
 .centered-text {
     text-align: center;
-    max-width: 80%; /* This keeps the text from getting too wide on large screens */
+    max-width: 80%;
     margin: 0 auto;
 }
 
-.centered-text h1 {
-    font-size: 4em;
+.hero-text {
+    font-size: 5em;
 }
 
-.centered-text p {
-    font-size: 1.2em;
+.title-text {
+    font-size: 3em;
 }
 
-.centered-text hr {
-    border: 0;
-    height: 1px;
-    background: white;
-    width: 100%;
+.subtitle-text {
+    font-size: 1.75em;
+}
+
+.body-text {
+    font-size: 1em;
 }
 
 .small-vertical-margin {
@@ -45,9 +46,19 @@ body {
     margin-bottom: 0.25em;
 }
 
+.green-text-outline {
+    text-shadow: -2px 0 green, 0 2px green, 2px 0 green, 0 -2px green;
+}
+
+.green-text-outline-sm {
+    text-shadow: -0.5px 0 green, 0 0.5px green, 0.5px 0 green, 0 -0.5px green;
+}
+
 /* Splash Section */
 #splash {
-    background-image: url('media/grid.jpg');
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), 
+        url('media/grid.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -56,29 +67,27 @@ body {
     color: white;
 }
 
+#splash hr {
+    border: 0;
+    height: 2px;
+    background: green;
+    width: 100%;
+}
+
 /*Banner Contact Section */
 #bannercontact {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
     background-image: url('media/banner_background.png');
     background-position: center;
     background-size: cover;
 }
 
-#bannercontact .column {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#bannercontact p {
+    text-align: center;
+    width: 100%;
 }
 
 /*Products Section */
-#products {
-    justify-content: space-between;
-}
-
 #products h2 {
     text-align: center;
     width: 100%;
