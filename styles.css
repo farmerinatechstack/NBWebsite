@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+@media (max-width: 600px) {
+    .content-section {
+        flex-direction: column;
+    }
+}
+
+/* General Styling */
+.centered-text {
+    text-align: center;
+    max-width: 80%; /* This keeps the text from getting too wide on large screens */
+    margin: 0 auto;
+}
+
+.centered-text h1 {
+    font-size: 4em;
+}
+
+.centered-text p {
+    font-size: 1.2em;
+}
+
+.centered-text hr {
+    border: 0;
+    height: 1px;
+    background: white;
+    width: 100%;
+}
+
+.small-vertical-margin {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+/* Splash Section */
+#splash {
+    background-image: url('media/grid.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*Banner Contact Section */
+#bannercontact {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('media/banner_background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#bannercontact .column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Products Section */
+#products {
+    justify-content: space-between;
+}
+
+#products h2 {
+    text-align: center;
+    width: 100%;
+}
+#products p {
+    text-align: center;
+    width: 100%;
+}
+
+.product-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Banner Season Section */
+#bannerseason {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('media/banner_background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/*About Section */
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .team-image {
+        max-width: 80%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+}
+
+.about-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-image {
+    border: 5px solid green;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+    .team-image {
+        width: 350px;
+    }
+}
+
+/*Footer Section */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('media/banner_background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.social-logo {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
